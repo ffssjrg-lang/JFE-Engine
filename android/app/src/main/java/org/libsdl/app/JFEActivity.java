@@ -11,9 +11,27 @@ public class JFEActivity extends SDLActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        File rugalFolder = new File(
+            getFilesDir(),
+            "characters/KOF-Rugal"
+        );
+
         try {
-            copyAssets("characters/KOF-Rugal",
-                new File(getFilesDir(), "characters/KOF-Rugal"));
+            copyAssets("characters/KOF-Rugal", rugalFolder);
+
+            File sprite = new File(rugalFolder, "Sprite.sff");
+            File def = new File(rugalFolder, "KOF-Rugal.def");
+
+            android.util.Log.i("JFE", "Rugal folder: " +
+                rugalFolder.getAbsolutePath());
+            android.util.Log.i("JFE", "Sprite exists: " +
+                sprite.exists());
+            android.util.Log.i("JFE", "Sprite size: " +
+                sprite.length());
+            android.util.Log.i("JFE", "DEF exists: " +
+                def.exists());
+
         } catch (Exception e) {
             android.util.Log.e("JFE", "Asset copy failed", e);
         }
