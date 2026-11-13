@@ -1,3 +1,7 @@
 [submodule "online/roomserver"]
 	path = online/roomserver
 	url = https://github.com/ffssjrg-lang/JFE-Room-Server.git
+[submodule "android/app/jni/SDL"]
+	path = android/app/jni/SDL
+	url = https://github.com/libsdl-org/SDL.git
+	branch = SDL2

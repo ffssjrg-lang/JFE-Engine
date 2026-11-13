@@ -170,6 +170,7 @@ void jfe_draw_line(int x1, int y1, int x2, int y2,
 
 }
 
+extern "C" {
 void jfe_draw_rgba_sprite(
     int spriteId,
     const unsigned char* pixels,
@@ -219,3 +220,5 @@ void jfe_draw_rgba_sprite(
     SDL_RenderCopy(renderer, texture, nullptr, &destination);
 }
 
+
+}
