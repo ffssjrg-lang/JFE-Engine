@@ -1,6 +1,10 @@
 #include "EngineCore.hpp"
 #include "character/JFECharacter.hpp"
 #include "character/StateRuntime.hpp"
+#ifdef __ANDROID__
+#include <SDL.h>
+#include <string>
+#endif
 
 extern "C" {
 void jfe_draw_rect(int, int, int, int, int, int, int, int);
@@ -37,8 +41,18 @@ void jfe_scene_init() {
 
     previousAttack = false;
 
+#ifdef __ANDROID__
+    const char* internalPath = SDL_AndroidGetInternalStoragePath();
+    std::string defPath = std::string(
+        internalPath ? internalPath : ""
+    ) + "/characters/KOF-Rugal/KOF-Rugal.def";
+#else
+    std::string defPath =
+        "assets/characters/KOF-Rugal/KOF-Rugal.def";
+#endif
+
     characterLoaded = jfe_load_character(
-        "assets/characters/KOF-Rugal/KOF-Rugal.def",
+        defPath.c_str(),
         &rugal
     ) != 0;
 

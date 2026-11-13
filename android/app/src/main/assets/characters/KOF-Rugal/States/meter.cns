@@ -1,0 +1,251 @@
+;-------------------------
+;-| RUGAL by JtheSaltyy |-
+;-------------------------
+;    - SYSTEM METERS -
+;-------------------------
+
+;================================
+
+;==========[ MODE SELECTOR ]==========
+[Statedef 7520]
+type = A
+anim = 9741
+velset = 0, 0
+ctrl = 0
+
+;=======================================================
+
+[State 7520, Standard Text]
+type = Explod
+trigger1 = !Time
+anim = 7520
+ID = 7520
+pos = 0, 0
+postype = p1
+sprpriority = 22556
+facing = cond(teamside = 1, 1, -1)
+removetime = -1
+bindtime = -1
+scale = 1, 1
+ownpal = 1
+
+[State 7520, Advanced Text]
+type = Explod
+trigger1 = !Time
+anim = 7521
+ID = 7521
+pos = 0, 0
+postype = p1
+sprpriority = 22555
+facing = cond(teamside = 1, 1, -1)
+removetime = -1
+bindtime = -1
+scale = 0.5, 0.5
+trans = addalpha
+alpha = 64, 0
+ownpal = 1
+
+;=======================================================
+
+[State 7520, AI Mode Var]
+type = VarSet
+trigger1 = root, stateno != 0
+trigger1 = root, AILevel 
+trigger1 = root, random > 900
+v = 20
+value = 1
+
+[State 7520, Mode Var]
+type = ParentVarSet
+trigger1 = !time
+v = 59
+value = 0
+
+[State 7520, PlaySnd]
+type = PlaySnd
+trigger1 = root, command = "fwd" && root, var(59) = 0
+trigger2 = root, command = "back" && root, var(59) = 1
+trigger3 = var(20)
+value = S14, 0
+channel = 3
+
+[State 7520, PlaySnd]
+type = PlaySnd
+trigger1 = roundstate = 2
+trigger2 = root, command = "a" || root, command = "b" || root, command = "c" || root, command = "d"
+trigger3 = root, command = "abc"
+value = S14, 1
+channel = 3
+
+;=======================================================
+
+[State 7520, VarSet]
+type = VarSet
+triggerall = !var(2) && root, AILevel = 0
+trigger1 = root, command = "fwd" && root, var(59) = 0
+trigger2 = root, command = "back" && root, var(59) = 1
+v = 2
+value = 1
+
+[State 7520, VarSet]
+type = VarSet
+triggerall = root, stateno != 0
+triggerall = !var(2) && root, AILevel
+trigger1 = var(20) && root, var(59) = 0
+trigger2 = var(20) && root, var(59) = 1
+v = 2
+value = 1
+
+[State 7520, VarSet]
+type = VarSet
+trigger1 = var(1) > 10
+v = 2
+value = 0
+
+[State 7520, Scale Var]
+type = VarAdd
+trigger1 = var(2)
+v = 1
+value = 1
+
+[State 7520, VarSet]
+type = VarSet
+trigger1 = !var(2)
+v = 1
+value = 0
+
+;=======================================================
+
+[State 7520, Scale Standard] ;standard go to front (behind advanced)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 0 && var(1) <= 5
+ID = 7520
+scale = 0.5 + (var(1) * 0.05), 0.5 + (var(1) * 0.05)
+trans = none
+sprpriority = 22555
+
+[State 7520, Scale Standard] ;standard go to front (in front of advanced)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 0 && var(1) > 5
+ID = 7520
+scale = 0.5 + (var(1) * 0.05), 0.5 + (var(1) * 0.05)
+trans = none
+sprpriority = 22556
+
+[State 7520, Scale Advanced] ;advanced go to front (behind standard)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 1 && var(1) <= 5
+ID = 7521
+scale = 0.5 + (var(1) * 0.05), 0.5 + (var(1) * 0.05)
+trans = none
+sprpriority = 22555
+
+[State 7520, Scale Advanced] ;advanced go to front (in front of standard)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 1 && var(1) > 5
+ID = 7521
+scale = 0.5 + (var(1) * 0.05), 0.5 + (var(1) * 0.05)
+trans = none
+sprpriority = 22556
+
+;=======================================================
+
+[State 7520, Scale Standard] ;standard go to back (in front of advanced)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 1 && var(1) <= 5
+ID = 7520
+scale = 1 - (var(1) * 0.05), 1 - (var(1) * 0.05)
+trans = addalpha
+alpha = 64, 0
+sprpriority = 22556
+
+[State 7520, Scale Standard] ;standard go to back (behind advanced)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 1 && var(1) > 5
+ID = 7520
+scale = 1 - (var(1) * 0.05), 1 - (var(1) * 0.05)
+trans = addalpha
+alpha = 64, 0
+sprpriority = 22555
+
+[State 7520, Scale Advanced] ;advanced go to back (in front of standard)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 0 && var(1) <= 5
+ID = 7521
+scale = 1 - (var(1) * 0.05), 1 - (var(1) * 0.05)
+trans = addalpha
+alpha = 64, 0
+sprpriority = 22556
+
+[State 7520, Scale Advanced] ;advanced go to back (behind standard)
+type = ModifyExplod
+trigger1 = var(1) != 0
+trigger1 = root, var(59) = 0 && var(1) > 5
+ID = 7521
+scale = 1 - (var(1) * 0.05), 1 - (var(1) * 0.05)
+trans = addalpha
+alpha = 64, 0
+sprpriority = 22555
+
+;=======================================================
+
+[State 7520, Mode Var]
+type = ParentVarSet
+trigger1 = root, command = "fwd" && root, var(59) = 0
+v = 59
+value = 1
+
+[State 7520, Mode Var]
+type = ParentVarSet
+trigger1 = root, command = "back" && root, var(59) = 1
+v = 59
+value = 0
+
+[State 7520, Mode Var]
+type = ParentVarSet
+trigger1 = root, AILevel 
+trigger1 = root, random > 900 && root, var(59) = 0
+v = 59
+value = 1
+
+[State 7520, Mode Var]
+type = ParentVarSet
+trigger1 = root, AILevel 
+trigger1 = root, random > 900 && root, var(59) = 1
+v = 59
+value = 0
+
+[State 7520, AI Mode Var]
+type = VarSet
+trigger1 = 1
+v = 20
+value = 0
+
+;=======================================================
+
+[State 7520, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate = 2
+trigger2 = root, command = "a" || root, command = "b" || root, command = "c" || root, command = "d"
+trigger3 = root, command = "abc"
+id = 7520
+
+[State 7520, RemoveExplod]
+type = RemoveExplod
+trigger1 = roundstate = 2
+trigger2 = root, command = "a" || root, command = "b" || root, command = "c" || root, command = "d"
+trigger3 = root, command = "abc"
+id = 7521
+
+[State 7520, End]
+type = destroySelf
+trigger1 = roundstate = 2
+trigger2 = root, command = "a" || root, command = "b" || root, command = "c" || root, command = "d"
+trigger3 = root, command = "abc"
