@@ -3,3 +3,10 @@ build/
 *.so
 online/roomserver/roomserver
 online/roomserver/server.log
+
+# Android build files
+android/.gradle/
+android/build/
+android/app/build/
+android/app/.cxx/
+android/local.properties
