@@ -1,0 +1,3 @@
+[submodule "online/roomserver"]
+	path = online/roomserver
+	url = https://github.com/ffssjrg-lang/JFE-Room-Server.git

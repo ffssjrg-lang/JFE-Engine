@@ -1,0 +1,64 @@
+;-------------------------
+;-| RUGAL by JtheSaltyy |-
+;-------------------------
+;  - DEFINITION FILE -
+;-------------------------
+
+;================================
+
+[Info]
+name = "Rugal" ;KOF-Rugal
+displayname = "Rugal"
+versiondate = 11, 11, 20
+mugenversion = 1.0
+author = "JtheSaltyy"
+pal.defaults = 1, 2
+localcoord = 320
+
+;================================
+
+[Files]
+cmd     	= Command.cmd
+cns	= States/constants.cns
+stcommon 	= States/system.cns
+sprite  	= Sprite.sff
+anim    	= Animation.air
+sound  	= Sound.snd
+st      	= States/normal.cns
+st2      	= States/special.cns
+st3      	= States/super.cns
+st4	= States/meter.cns
+st5	= config.txt
+
+;================================
+
+Pal1  = Palettes/1.act
+Pal2  = Palettes/2.act
+Pal3  = Palettes/3.act
+Pal4  = Palettes/4.act
+Pal5  = Palettes/5.act
+Pal6  = Palettes/6.act
+Pal7  = Palettes/7.act
+Pal8  = Palettes/8.act
+Pal9  = Palettes/9.act
+Pal10  = Palettes/10.act
+Pal11  = Palettes/11.act
+Pal12  = Palettes/12.act
+
+;================================
+
+[Palette Keymap]
+x = 1
+y = 2
+z = 3
+a = 4
+b = 5
+c = 6
+x2 = 7
+y2 = 8
+z2 = 9
+a2 = 10
+b2 = 11
+c2 = 12
+
+;================================

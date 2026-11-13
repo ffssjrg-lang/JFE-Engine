@@ -1,0 +1,29 @@
+- KOF-Rugal Readme -
+
+
+  = Q & A =
+
+
+ Q : Why Rugal? In a KOF Style instead of the CvS one you usually do?
+
+ A : I felt like I wanted to expand my coding talent farther than just CvS. I decided to not only do a KOF
+     style, but I decided to make Rugal as my first KOF character since he's the one I know how to play most.
+
+
+ Q : What's his playstyle like?
+
+ A : Rugal plays like his KOF '98 appearance, along with moves taken from his Omega Rugal mode.
+
+
+ Q : How do you play Ukyo?
+
+ A : Rugal is very slow, but makes up for it in high damage combos. His Advanced mode really brings out the combo
+     ability in his moves, and Rugal becomes an offensive monster. Rugal's Fwd+C is the main method to starting out
+     a majority of his BnB combos, and his special moves take care of the rest of the combo. His A Dark Smash can be
+     comboed into from aerial D, so his rushdown is also incredibly good with Hyper Hop. It's important to play a
+     slow and steady neutral game while also knowing the many combos Rugal has access to when you land an attack.
+
+
+ = CREDITS =
+
+  Ikaruga - Sprites, Sounds, KOF Common

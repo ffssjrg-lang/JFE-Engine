@@ -1,0 +1,5 @@
+build/
+*.o
+*.so
+online/roomserver/roomserver
+online/roomserver/server.log

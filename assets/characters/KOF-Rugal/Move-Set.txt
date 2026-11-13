@@ -1,0 +1,199 @@
+=== KOF-RUGAL MOVESET ===
+
+
+= Button Scheme =
+
+A = Weak Punch
+B = Strong Punch
+C = Weak Kick
+D = Strong Kick
+P = Punch
+K = Kick
+2P = Two Punches
+2P = Two Kicks
+EX = Enhanced
+
+F = Forward
+B = Back
+U = Up
+D = Down
+DF = Down-Forward
+DB = Down-Back
+UF = Up-Forward
+UB = Up-Back
+
+
+=== COMMAND NORMALS ===
+
+- Overhead Kick -
+Command: F+C
+- Properties -
+=Overhead
+
+
+=== SPECIALS ===
+
+- Reppuken -
+Command: D, DF, F, P (2P for Enhanced)
+-Properties-
+=Hard Knockdown, No Recovery (EX Only)
+
+- Genocide Cutter -
+Command: F, D, DF, K (2K for Enhanced)
+-Properties-
+=Hard Knockdown, No Recovery
+
+- Kaiser Wave -
+Command: F, B, DB, D, DF, F, P (2P for Enhanced)
+-Properties-
+=Chargeable (hold P)
+=Hard Knockdown, No Recovery
+
+- Dark Barrier -
+Command: B, DB, D, DF, F, K (2K for Enhanced)
+-Properties-
+=Projectile Reflecion
+=Hard Knockdown, No Recovery
+
+- God Press -
+Command: F, DF, D, DB, B, P (2P for Enhanced)
+-Properties-
+=Wall Linger (EX Only)
+=Hard Knockdown, No Recovery
+
+- Bead's Destructor -
+Command: F, DF, D, DB, B, K (2K for Enhanced)
+-Properties-
+=Hard Knockdown, No Recovery
+
+- Dark Smash -
+Command: B, DB, D, DF, F, P (2P for Enhanced)
+-Properties-
+=Air Only
+=Hard Knockdown, No Recovery (A/B Only)
+
+
+=== SUPERS ===
+
+- Genocide Haven -
+Command: D, DF, F, D, DF, F, P (2P for MAX)
+Meter Cost: 1
+-Properties-
+=Hard Knockdown, No Recovery
+
+- Dead End Screamer -
+Command: D, DB, B, D, DB, B, K (2K for MAX)
+Meter Cost: 1
+-Properties-
+=Hard Knockdown, No Recovery
+
+- Gigantic Pressure -
+Command: D, DF, F, DF, D, DB, B, P (2P for MAX)
+Meter Cost: 1
+-Properties-
+=Hard Knockdown, No Recovery
+
+- Genocide Destruction -
+Command: D, DF, F, D, DF, F, P (2P for MAX)
+Meter Cost: 1
+-Properties-
+=Hard Knockdown, No Recovery
+
+
+=== KOF STYLE SYSTEMS ===
+
+
+You are given two different modes to choose from at the start of a match.
+These modes are STANDARD and ADVANCED. These two modes hold very different mechanics entirely,
+and each character using this style capitalizes off of these systems in very different ways.
+
+
+====================
+===== STANDARD =====
+====================
+
+Description: Standard Mode is good for people learning this new style. Essentially, it has pretty
+simple tools and mechanics that aren't too heavy in execution to master.
+
+==========
+Mechanics
+==========
+
+Dash -- Double tap forward and you do a quick hop step.
+
+Roll -- Hold Forward then Press A and C and you do a roll that evades all attacks, 
+however you can be thrown out of this roll. You can also hold backward instead of forward
+to do a backwards roll instead.
+
+Crushing Blow -- Press both B and D and you do a powerful attack that can link
+into other attacks, however if blocked, this move is easily punishable. It is completely
+invulnerable on startup, making it a useful wake-up tool.
+
+Enhanced Specials -- Press 2 attack buttons instead of 1 when performing a special
+to have an Enhanced Special. This move is generally more powerful than the regular
+specials and has different properties. This move costs half a bar of meter.
+
+Power Charge -- Hold A+B+C and you slowly begin to charge your power. It goes slow
+in the beginning, but gets faster as you charge for longer.
+
+Super Jump -- Press down and then up, and you perform a jump with an incredible vertical distance.
+Hold back or forward and you travel at a decent horizontal velocity.
+
+MAX Super at 3 bars -- When you do a super with 2 attack buttons at full meter, you
+perform a MAX super, which is a much more powerful version of the super you inputted for.
+
+Just Defend -- Guard attack at just the right time and you get Just Defend. Just Defend gives you both life and
+meter, and acts just like the Just Defend from games like CvS2 and Garou Mark of the Wolves.
+
+Tech Roll -- Press A and B when you are close to the ground and you perform a Tech Roll,
+which helps you recover much quicker than before during a knockdown.
+
+Guard Counter -- Press both C and D when blocking and you perform a counter attack that will
+hit the opponent. Since it's a counter, it's much more powerful than normal. It costs half
+a bar of meter.
+
+
+====================
+===== ADVANCED =====
+====================
+
+Description: Advanced mode is for people who have learned this character to a fair degree, and this
+mode awards their skill with buffs that capitalize on very key aspects of the fight. Instead of 3 bars,
+Advanced mode simplifies it to 1 bar, so meter gaining is heavily increased.
+
+==========
+Mechanics
+==========
+
+Run -- Double tap and then hold forward to run. Let go of forward to stop running.
+
+Dodge -- Press A and C and you will perform a quick dodge. You cannot be hit during this dodge, but you
+can be thrown out of it. Press any attack button during the dodge, and you perform a Blowaway attack.
+
+Increased Juggling -- Advanced Mode's main feature is the fact that it has advanced combos that can
+deal a lot of damage in return for heavy execution. The juggle points are decreased, which allows for
+much more combo creativity and variety.
+
+Super Cancelling -- When performing a special, you can quickly perform a super command once the special
+hits, and you will cancel into the super. This is a main part of Advanced mode's increased combo potential.
+
+EX Mode -- When you have more than a full bar of eter, press A+B+C and you enter EX Mode. You get a
+25% attack boost along with more juggling opportunities, and during MAX mode, if you reach full meter
+again, you can perform the MAX super, however if you're lower than 25% health you still need to reach
+full meter again to perform the MAX Super.
+
+MAX Super at low health -- If you're lower than 25% health and you reach full meter, your super becomes
+a MAX Super, but you still lose the meter.
+
+Hyper Hop -- When running, press up during the run and you perform a very fast but not vertical jump. This is
+great for closing in space and starting rushdown, and is a great start to combos.
+
+Just Defend -- Guard attack at just the right time and you get Just Defend. Just Defend gives you both life and
+meter, and acts just like the Just Defend from games like CvS2 and Garou Mark of the Wolves.
+
+Stationary Tech -- Press A and B when you are close to the ground and you perform a Stationary Tech.
+You'll recover much quicker, but you'll stand still.
+
+Counter Movement -- Press both C and D when blocking and you perform a roll. By holding forward or backwards,
+you can change which direction you roll. If you don't input anything, then it defaults to a forwards roll.
+This move costs half of the meter.
